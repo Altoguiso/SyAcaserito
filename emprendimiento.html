@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería SyA Caseritos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff4e6;
+            color: #3a2a4f;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, p {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        /* Header */
+        header {
+            background-color: #f4c2c2;
+            color: #3a2a4f;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #5e4b56;
+        }
+
+        /* Product grid */
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+            justify-items: center;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #f4c2c2;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card h2 {
+            font-size: 22px;
+            background-color: #d79e8d;
+            color: #fff;
+            margin: 0;
+            padding: 15px;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .product-card p {
+            font-size: 16px;
+            padding: 10px 20px;
+            color: #5e4b56;
+            margin: 0;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-card img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f4c2c2;
+            color: #3a2a4f;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        footer a {
+            color: #3a2a4f;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Panadería Dulce Tentación</h1>
+        <p>La tradición de un buen pan, hecho con amor</p>
+    </header>
+
+    <!-- Product Grid -->
+    <div class="product-container">
+        <!-- Producto 1 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Pan+de+Chocolate" alt="Pan de Chocolate">
+            <h2>Pan de Chocolate</h2>
+            <p>Delicioso pan suave con cacao y un toque de chocolate en el centro. Perfecto para cualquier momento del día.</p>
+            <h3>$4500</h3>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Pan+de+Fruta" alt="Pan de Fruta">
+            <h2>Pan de Fruta</h2>
+            <p>Un pan fresco con mezcla de frutas naturales y un toque de azúcar glas. ¡Siente la frescura en cada bocado!</p>
+            <h3>$3500</h3>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Pan+de+Vainilla" alt="Pan de Vainilla">
+            <h2>Pan de Vainilla</h2>
+            <p>Este pan suave con aroma a vainilla es el complemento perfecto para tu café o té por la mañana.</p>
+            <h3>$4.200</h3>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Pan+de+Canela" alt="Pan de Canela">
+            <h2>Pan de Canela</h2>
+            <p>El equilibrio perfecto entre lo dulce y lo especiado. Ideal para los amantes de la canela.</p>
+            <h3>$4000</h3>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Panadería Dulce Tentación - Todos los derechos reservados | <a href="#">Contacto</a></p>
+    </footer>
+
+</body>
+</html>
